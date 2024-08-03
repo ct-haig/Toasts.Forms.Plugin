@@ -7,7 +7,7 @@ using Android.Graphics;
 
 namespace Plugin.Toasts
 {
-    [BroadcastReceiver(Enabled = true, Label = "Toasts Broadcast Receiver")]
+    [BroadcastReceiver(Enabled = true, Label = "Toasts Broadcast Receiver", Exported = false)]
     public class AlarmHandler : BroadcastReceiver
     {
         public const string NotificationKey = "LocalNotification";

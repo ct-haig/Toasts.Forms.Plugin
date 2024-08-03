@@ -320,6 +320,7 @@ namespace Plugin.Toasts
 
     }
 
+    [BroadcastReceiver(Enabled = true, Exported = false)]
     class NotificationReceiver : BroadcastReceiver
     {
         public override void OnReceive(Context context, Intent intent)
